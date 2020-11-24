@@ -208,33 +208,37 @@
         MDToolbar:
             title :"Desistir"
             left_action_items : [["arrow-left", lambda x : root.voltar()]]
-        FloatLayout:
+        BoxLayout:
+            orientation : 'vertical'
             spacing : '20dp'
-            MDLabel :
-                pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
-                halign : 'center'
-                height : self.texture_size[1]
-                id: prova1_enunciado
-            MDRaisedButton : 
-                id : prova1_alternativa1
-                on_release: root.salvando_os_dados_do_usuario('a')
-                pos : (350, 350)
-            MDRaisedButton : 
-                id: prova1_alternativa2
-                on_release: root.salvando_os_dados_do_usuario('b')
-                pos : (350, 300)
-            MDRaisedButton : 
-                id: prova1_alternativa3
-                on_release: root.salvando_os_dados_do_usuario('c')
-                pos : (350, 250)
-            MDRaisedButton : 
-                id: prova1_alternativa4
-                on_release: root.salvando_os_dados_do_usuario('d')
-                pos : (350, 200)
-            MDRaisedButton : 
-                id: prova1_alternativa5
-                on_release: root.salvando_os_dados_do_usuario('e')
-                pos : (350, 150)
+            BoxLayout:
+                MDLabel :
+                    pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
+                    halign : 'center'
+                    height : self.texture_size[1]
+                    id: prova1_enunciado
+            AnchorLayout :
+                MDRaisedButton : 
+                    id : prova1_alternativa1
+                    on_release: root.salvando_os_dados_do_usuario('a')
+                    pos_hint : {'center_x': 0.4, 'center_y' : 0.7}
+            AnchorLayout :
+                MDRaisedButton : 
+                    id: prova1_alternativa2
+                    on_release: root.salvando_os_dados_do_usuario('b')
+            AnchorLayout :
+                MDRaisedButton : 
+                    id: prova1_alternativa3
+                    on_release: root.salvando_os_dados_do_usuario('c')
+            AnchorLayout :
+                MDRaisedButton : 
+                    id: prova1_alternativa4
+                    on_release: root.salvando_os_dados_do_usuario('d')
+            AnchorLayout :
+                MDRaisedButton : 
+                    id: prova1_alternativa5
+                    on_release: root.salvando_os_dados_do_usuario('e')
+                
 
 <Prova2>:
     on_pre_enter : root.comecando_exercicios()
@@ -243,33 +247,39 @@
         MDToolbar:
             title :"Desistir"
             left_action_items : [["arrow-left", lambda x : root.voltar()]]
-        FloatLayout:
+        BoxLayout:
+            orientation:'vertical'
             spacing : '20dp'
-            MDLabel :
-                pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
-                halign : 'center'
-                height : self.texture_size[1]
-                id: prova2_enunciado
-            MDRaisedButton : 
-                id : prova2_alternativa1
-                on_release: root.salvando_os_dados_do_usuario('a')
-                pos : (350, 350)
-            MDRaisedButton : 
-                id: prova2_alternativa2
-                on_release: root.salvando_os_dados_do_usuario('b')
-                pos : (350, 300)
-            MDRaisedButton : 
-                id: prova2_alternativa3
-                on_release: root.salvando_os_dados_do_usuario('c')
-                pos : (350, 250)
-            MDRaisedButton : 
-                id: prova2_alternativa4
-                on_release: root.salvando_os_dados_do_usuario('d')
-                pos : (350, 200)
-            MDRaisedButton : 
-                id: prova2_alternativa5
-                on_release: root.salvando_os_dados_do_usuario('e')
-                pos : (350, 150)
+            BoxLayout:
+                MDLabel :
+                    pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
+                    halign : 'center'
+                    height : self.texture_size[1]
+                    id: prova2_enunciado
+            AnchorLayout:
+                MDRaisedButton : 
+                    id : prova2_alternativa1
+                    on_release: root.salvando_os_dados_do_usuario('a')
+            AnchorLayout:    
+                MDRaisedButton : 
+                    id: prova2_alternativa2
+                    on_release: root.salvando_os_dados_do_usuario('b')
+                    
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova2_alternativa3
+                    on_release: root.salvando_os_dados_do_usuario('c')
+                    
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova2_alternativa4
+                    on_release: root.salvando_os_dados_do_usuario('d')
+                    
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova2_alternativa5
+                    on_release: root.salvando_os_dados_do_usuario('e')
+                    
 
 <Prova3>:
     on_pre_enter : root.comecando_exercicios()
@@ -278,33 +288,35 @@
         MDToolbar:
             title :"Desistir"
             left_action_items : [["arrow-left", lambda x : root.voltar()]]
-        FloatLayout:
+        BoxLayout:
+            orientation : 'vertical'
             spacing : '20dp'
-            MDLabel :
-                pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
-                halign : 'center'
-                height : self.texture_size[1]
-                id: prova3_enunciado
-            MDRaisedButton : 
-                id : prova3_alternativa1
-                on_release: root.salvando_os_dados_do_usuario('a')
-                pos : (350, 350)
-            MDRaisedButton : 
-                id: prova3_alternativa2
-                on_release: root.salvando_os_dados_do_usuario('b')
-                pos : (350, 300)
-            MDRaisedButton : 
-                id: prova3_alternativa3
-                on_release: root.salvando_os_dados_do_usuario('c')
-                pos : (350, 250)
-            MDRaisedButton : 
-                id: prova3_alternativa4
-                on_release: root.salvando_os_dados_do_usuario('d')
-                pos : (350, 200)
-            MDRaisedButton : 
-                id: prova3_alternativa5
-                on_release: root.salvando_os_dados_do_usuario('e')
-                pos : (350, 150)
+            BoxLayout:
+                MDLabel :
+                    pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
+                    halign : 'center'
+                    height : self.texture_size[1]
+                    id: prova3_enunciado
+            AnchorLayout:
+                MDRaisedButton : 
+                    id : prova3_alternativa1
+                    on_release: root.salvando_os_dados_do_usuario('a')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova3_alternativa2
+                    on_release: root.salvando_os_dados_do_usuario('b')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova3_alternativa3
+                    on_release: root.salvando_os_dados_do_usuario('c')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova3_alternativa4
+                    on_release: root.salvando_os_dados_do_usuario('d')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova3_alternativa5
+                    on_release: root.salvando_os_dados_do_usuario('e')
 
 <Prova4>:
     on_pre_enter : root.comecando_exercicios()
@@ -313,33 +325,35 @@
         MDToolbar:
             title :"Desistir"
             left_action_items : [["arrow-left", lambda x : root.voltar()]]
-        FloatLayout:
+        BoxLayout:
+            orientation : 'vertical'
             spacing : '20dp'
-            MDLabel :
-                pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
-                halign : 'center'
-                height : self.texture_size[1]
-                id: prova4_enunciado
-            MDRaisedButton : 
-                id : prova4_alternativa1
-                on_release: root.salvando_os_dados_do_usuario('a')
-                pos : (350, 350)
-            MDRaisedButton : 
-                id: prova4_alternativa2
-                on_release: root.salvando_os_dados_do_usuario('b')
-                pos : (350, 300)
-            MDRaisedButton : 
-                id: prova4_alternativa3
-                on_release: root.salvando_os_dados_do_usuario('c')
-                pos : (350, 250)
-            MDRaisedButton : 
-                id: prova4_alternativa4
-                on_release: root.salvando_os_dados_do_usuario('d')
-                pos : (350, 200)
-            MDRaisedButton : 
-                id: prova4_alternativa5
-                on_release: root.salvando_os_dados_do_usuario('e')
-                pos : (350, 150)
+            BoxLayout:
+                MDLabel :
+                    pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
+                    halign : 'center'
+                    height : self.texture_size[1]
+                    id: prova4_enunciado
+            AnchorLayout:
+                MDRaisedButton : 
+                    id : prova4_alternativa1
+                    on_release: root.salvando_os_dados_do_usuario('a')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova4_alternativa2
+                    on_release: root.salvando_os_dados_do_usuario('b')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova4_alternativa3
+                    on_release: root.salvando_os_dados_do_usuario('c')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova4_alternativa4
+                    on_release: root.salvando_os_dados_do_usuario('d')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova4_alternativa5
+                    on_release: root.salvando_os_dados_do_usuario('e')
 
 <Prova5>:
     on_pre_enter : root.comecando_exercicios()
@@ -348,33 +362,35 @@
         MDToolbar:
             title :"Desistir"
             left_action_items : [["arrow-left", lambda x : root.voltar()]]
-        FloatLayout:
+        BoxLayout:
+            orientation : 'vertical'
             spacing : '20dp'
-            MDLabel :
-                pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
-                halign : 'center'
-                height : self.texture_size[1]
-                id: prova5_enunciado
-            MDRaisedButton : 
-                id : prova5_alternativa1
-                on_release: root.salvando_os_dados_do_usuario('a')
-                pos : (350, 350)
-            MDRaisedButton : 
-                id: prova5_alternativa2
-                on_release: root.salvando_os_dados_do_usuario('b')
-                pos : (350, 300)
-            MDRaisedButton : 
-                id: prova5_alternativa3
-                on_release: root.salvando_os_dados_do_usuario('c')
-                pos : (350, 250)
-            MDRaisedButton : 
-                id: prova5_alternativa4
-                on_release: root.salvando_os_dados_do_usuario('d')
-                pos : (350, 200)
-            MDRaisedButton : 
-                id: prova5_alternativa5
-                on_release: root.salvando_os_dados_do_usuario('e')
-                pos : (350, 150)
+            BoxLayout:
+                MDLabel :
+                    pos_hint : {'center_x' : 0.5, 'center_y' : 0.9 }
+                    halign : 'center'
+                    height : self.texture_size[1]
+                    id: prova5_enunciado
+            AnchorLayout:
+                MDRaisedButton : 
+                    id : prova5_alternativa1
+                    on_release: root.salvando_os_dados_do_usuario('a')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova5_alternativa2
+                    on_release: root.salvando_os_dados_do_usuario('b')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova5_alternativa3
+                    on_release: root.salvando_os_dados_do_usuario('c')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova5_alternativa4
+                    on_release: root.salvando_os_dados_do_usuario('d')
+            AnchorLayout:
+                MDRaisedButton : 
+                    id: prova5_alternativa5
+                    on_release: root.salvando_os_dados_do_usuario('e')
 
 <Correcao1>:
     on_pre_enter : root.pegando_respostas()
